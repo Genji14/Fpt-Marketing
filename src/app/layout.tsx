@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="vi" className={inter.className}>
       <body>
         <Header />
-        <div className="mt-[80px]">{children}</div>
+        <div className="mt-[80px] min-h-screen">{children}</div>
         <Footer />
       </body>
     </html>
