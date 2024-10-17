@@ -15,17 +15,17 @@ export const Header = () => {
           alt="Fpt Telecom"
           height={200}
           width={200}
-          className="object-contain h-10"
+          className="object-contain h-8"
         />
-        <nav className="flex items-center text-background gap-8">
+        <nav className="flex items-center text-background gap-6">
           <Button className="bg-transparent hover:bg-transparent hover:text-orange">
-            <span className="font-semibold text-lg">Internet</span>
+            <span className="font-semibold text-sm">Internet</span>
           </Button>
           <Popover>
             <PopoverTrigger>
               <div className="flex items-center space-x-1.5 hover:text-orange">
-                <span className="font-semibold text-lg">Truyền hình</span>
-                <ChevronDown className="w-5 h-5" />
+                <span className="font-semibold text-sm">Truyền hình</span>
+                <ChevronDown className="w-4 h-4" />
               </div>
             </PopoverTrigger>
             <PopoverContent>Place content for the popover here.</PopoverContent>
@@ -33,20 +33,20 @@ export const Header = () => {
           <Popover>
             <PopoverTrigger>
               <div className="flex items-center space-x-1.5 hover:text-orange">
-                <span className="font-semibold text-lg">Thiết bị</span>
-                <ChevronDown className="w-5 h-5" />
+                <span className="font-semibold text-sm">Thiết bị</span>
+                <ChevronDown className="w-4 h-4" />
               </div>
             </PopoverTrigger>
             <PopoverContent>Place content for the popover here.</PopoverContent>
           </Popover>
           <Button className="bg-transparent hover:bg-transparent hover:text-orange">
-            <span className="font-semibold text-lg">Tin tức</span>
+            <span className="font-semibold text-sm">Tin tức</span>
           </Button>
           <Popover>
             <PopoverTrigger>
               <div className="flex items-center space-x-1.5 hover:text-orange">
-                <span className="font-semibold text-lg">Tiện ich</span>
-                <ChevronDown className="w-5 h-5" />
+                <span className="font-semibold text-sm">Tiện ich</span>
+                <ChevronDown className="w-4 h-4" />
               </div>
             </PopoverTrigger>
             <PopoverContent>Place content for the popover here.</PopoverContent>
