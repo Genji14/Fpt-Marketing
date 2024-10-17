@@ -3,13 +3,14 @@
 import LogoImage from "@/assets/fpt-logo.png";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
-import { Button } from "../ui/button";
-import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+import { Button } from "./ui/button";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { Notice } from "./Notice";
 
 export const Header = () => {
   return (
-    <header className="bg-black fixed top-0 z-40 w-full border-b">
-      <div className="px-40 flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+    <header className="fixed top-0 z-40 w-full">
+      <div className="px-40 flex h-12 items-center space-x-4 sm:justify-between sm:space-x-0 bg-black">
         <Image
           src={LogoImage}
           alt="Fpt Telecom"
@@ -23,7 +24,7 @@ export const Header = () => {
           </Button>
           <Popover>
             <PopoverTrigger>
-              <div className="flex items-center space-x-1.5 hover:text-orange">
+              <div className="flex items-center space-x-1 hover:text-orange">
                 <span className="font-semibold text-sm">Truyền hình</span>
                 <ChevronDown className="w-4 h-4" />
               </div>
@@ -32,7 +33,7 @@ export const Header = () => {
           </Popover>
           <Popover>
             <PopoverTrigger>
-              <div className="flex items-center space-x-1.5 hover:text-orange">
+              <div className="flex items-center space-x-1 hover:text-orange">
                 <span className="font-semibold text-sm">Thiết bị</span>
                 <ChevronDown className="w-4 h-4" />
               </div>
@@ -44,7 +45,7 @@ export const Header = () => {
           </Button>
           <Popover>
             <PopoverTrigger>
-              <div className="flex items-center space-x-1.5 hover:text-orange">
+              <div className="flex items-center space-x-1 hover:text-orange">
                 <span className="font-semibold text-sm">Tiện ich</span>
                 <ChevronDown className="w-4 h-4" />
               </div>
@@ -53,6 +54,7 @@ export const Header = () => {
           </Popover>
         </nav>
       </div>
+      <Notice />
     </header>
   );
 };
