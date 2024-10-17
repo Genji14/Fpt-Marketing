@@ -88,7 +88,7 @@ export const Footer = () => {
                   Tập đoàn FPT
                 </Link>
               </div>
-              <div className="flex flex-col space-y-2 w-full h-full p-6">
+              <div className="flex flex-col space-y-2.5 w-full h-full p-6">
                 <h1 className="font-bold text-lg text-white">Hỗ trợ</h1>
                 <Separator className="bg-[#ffffff4d]" />
                 <Link
@@ -128,7 +128,7 @@ export const Footer = () => {
                   Phản hồi Khách hàng
                 </Link>
               </div>
-              <div className="flex flex-col space-y-2 w-full h-full p-6">
+              <div className="flex flex-col space-y-2.5 w-full h-full p-6">
                 <h1 className="font-bold text-lg text-white">Tiện ích</h1>
                 <Separator className="bg-[#ffffff4d]" />
                 <Link
@@ -156,7 +156,7 @@ export const Footer = () => {
                   Điểm giao dịch
                 </Link>
               </div>
-              <div className="flex flex-col space-y-2 w-full h-full p-6">
+              <div className="flex flex-col space-y-2.5 w-full h-full p-6">
                 <h1 className="font-bold text-lg text-white">Điều khoản</h1>
                 <Separator className="bg-[#ffffff4d]" />
                 <Link
