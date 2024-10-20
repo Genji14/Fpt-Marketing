@@ -1,11 +1,10 @@
 "use client";
 
 import LogoImage from "@/assets/fpt-logo.png";
-import { ChevronDown } from "lucide-react";
+import { headerItemsData } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "./ui/button";
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
-import { Notice } from "./Notice";
 
 export const Header = () => {
   return (
@@ -18,43 +17,23 @@ export const Header = () => {
           width={200}
           className="object-contain h-8"
         />
-        <nav className="flex items-center text-background gap-6">
-          <Button className="bg-transparent hover:bg-transparent hover:text-orange">
-            <span className="font-semibold text-sm">Internet</span>
-          </Button>
-          <Popover>
-            <PopoverTrigger>
-              <div className="flex items-center space-x-1 hover:text-orange">
-                <span className="font-semibold text-sm">Truyền hình</span>
-                <ChevronDown className="w-4 h-4" />
-              </div>
-            </PopoverTrigger>
-            <PopoverContent>Place content for the popover here.</PopoverContent>
-          </Popover>
-          <Popover>
-            <PopoverTrigger>
-              <div className="flex items-center space-x-1 hover:text-orange">
-                <span className="font-semibold text-sm">Thiết bị</span>
-                <ChevronDown className="w-4 h-4" />
-              </div>
-            </PopoverTrigger>
-            <PopoverContent>Place content for the popover here.</PopoverContent>
-          </Popover>
-          <Button className="bg-transparent hover:bg-transparent hover:text-orange">
-            <span className="font-semibold text-sm">Tin tức</span>
-          </Button>
-          <Popover>
-            <PopoverTrigger>
-              <div className="flex items-center space-x-1 hover:text-orange">
-                <span className="font-semibold text-sm">Tiện ich</span>
-                <ChevronDown className="w-4 h-4" />
-              </div>
-            </PopoverTrigger>
-            <PopoverContent>Place content for the popover here.</PopoverContent>
-          </Popover>
+        <nav className="flex items-center text-background gap-4">
+          {headerItemsData.map((item) => (
+            <Link href={item.href}>
+              <Button
+                className="
+                  rounded-none bg-transparent relative
+                  hover:bg-transparent hover:text-orange  
+                  after:absolute after:-bottom-1 after:w-0 after:bg-orange after:h-[3px] after:transition-all
+                  hover:after:w-full  
+                "
+              >
+                <span className="font-semibold text-sm">{item.title}</span>
+              </Button>
+            </Link>
+          ))}
         </nav>
       </div>
-      <Notice />
     </header>
   );
 };

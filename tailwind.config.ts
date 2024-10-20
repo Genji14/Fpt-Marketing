@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		fontSize: {
+			xxs: '0.5rem'
+		},
   		colors: {
 			orange: '#ff6b17',
 			gray: '#19191a',

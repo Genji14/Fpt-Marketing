@@ -1,7 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { ComboSection } from "@/components/Combo";
+import { InternetSection } from "@/components/Internet";
 
 export default function Home() {
   return (
-    <Button>Hello World</Button>
+    <>
+      <InternetSection />
+      <ComboSection />
+    </>
   );
 }
