@@ -18,8 +18,8 @@ export const Header = () => {
           className="object-contain h-8"
         />
         <nav className="flex items-center text-background gap-4">
-          {headerItemsData.map((item) => (
-            <Link href={item.href}>
+          {headerItemsData.map((item, index) => (
+            <Link key={index} href={item.href}>
               <Button
                 className="
                   rounded-none bg-transparent relative
