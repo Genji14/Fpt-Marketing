@@ -14,9 +14,9 @@ export const ComboSection = () => {
   return (
     <section
       id="sec-combo"
-      className="scroll-mt-12 px-60 py-12 relative h-[600px]"
+      className="scroll-mt-12 px-40 py-12 relative h-[calc(100vh-3rem)]"
     >
-      <div className="absolute w-full -translate-y-1/2 top-1/2 inset-x-0 rounded-2xl overflow-hidden aspect-[25/9] px-60">
+      <div className="absolute w-full -translate-y-1/2 top-1/2 inset-x-0 rounded-2xl overflow-hidden aspect-[2.5/1] px-40">
         <Image
           height={2000}
           width={2000}
