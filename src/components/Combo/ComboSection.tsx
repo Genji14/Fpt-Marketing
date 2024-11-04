@@ -15,7 +15,7 @@ export const ComboSection = () => {
   return (
     <section
       id="sec-combo"
-      className="scroll-mt-12 px-40 py-12 relative h-[calc(100vh-3rem)]"
+      className="scroll-mt-12 px-40 py-16 relative h-[calc(100vh-3rem)]"
     >
       <div className="absolute w-full -translate-y-1/2 top-1/2 inset-x-0 rounded-2xl overflow-hidden aspect-[2.5/1] px-40">
         <Image
@@ -27,7 +27,7 @@ export const ComboSection = () => {
         />
       </div>
       <div className="flex flex-col justify-between z-[5] relative px-36 h-full">
-        <div className="flex flex-col">
+        <div className="flex flex-col flex-auto pb-10">
           <h1 className="text-4xl text-orange font-bold">Combo</h1>
           <h2 className="text-3xl text-white font-bold">Internet x FPT Play</h2>
           <ComboSelect

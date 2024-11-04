@@ -14,10 +14,10 @@ export const ComboSelect = ({
   setSelectedType,
 }: ComboSelectProps) => {
   return (
-    <div className="flex items-center gap-2 my-2">
+    <div className="flex items-center gap-2 my-4">
       {ComboSelectData.map((item, index) => (
         <Button
-        key={index}
+          key={index}
           className={cn(
             "py-2 h-fit text-xs font-bold border border-transparent",
             selectedType === item.type
