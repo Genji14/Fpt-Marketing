@@ -1,4 +1,10 @@
-import { ComboItemData, ComboSelectEnum, GameComboData, HighclassComboData, StandardComboData } from "@/constants";
+import {
+  ComboItemData,
+  ComboSelectEnum,
+  GameComboData,
+  HighclassComboData,
+  StandardComboData,
+} from "@/constants";
 import { ComboItem } from "./ComboItem";
 import { useEffect, useState } from "react";
 
@@ -12,7 +18,7 @@ export const ComboGroup = ({
   useEffect(() => {
     switch (selectedType) {
       case ComboSelectEnum.GAME:
-        setSelectGroup(GameComboData)
+        setSelectGroup(GameComboData);
         break;
       case ComboSelectEnum.HIGHCLASS:
         setSelectGroup(HighclassComboData);
@@ -25,8 +31,8 @@ export const ComboGroup = ({
 
   return (
     <div className="grid grid-cols-3 gap-6 rounded-lg flex-auto">
-      {selectGroup.map((item: ComboItemData) => (
-        <ComboItem item={item} />
+      {selectGroup.map((item: ComboItemData, index) => (
+        <ComboItem key={index} item={item} />
       ))}
     </div>
   );
